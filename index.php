@@ -60,7 +60,29 @@ function CF_Course_Main()
 
 function CF_Courses()
 {
-    echo "Hello, this is our custom field";
+    echo "Halo, ini adalah custom field";
+
+    wp_head();
+
+?>
+
+    <div class="BG-Red">
+        <h3>Harga Kelas</h3>
+        <input type="text" name="">
+    </div>
+
+<?php
 }
 
 add_action('admin_init', 'CF_Course_Main');
+
+
+// Include css file
+function add_style()
+{
+    // 
+    wp_register_style('style', plugin_dir_url(__FILE__) . 'scripts/style.css');
+    wp_enqueue_style('style', plugin_dir_url(__FILE__) . 'scripts/style.css');
+}
+
+add_action('wp_enqueue_scripts', 'add_style');
