@@ -1,3 +1,33 @@
-.BG-Red {
-    background-color: red;
+/* .BG-Blue-2 {
+    background-color: #e6eeff;
+} */
+/* .BG-Blue-1{
+    background-color: #007cc7;
+} */
+
+/* .col-90{
+    width: 90%;
+}
+
+.MA{
+    margin: auto;
+} */
+
+.container{
+    background-color: #007cc7;
+
+}
+.box1{
+    background-color: #e6eeff;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.5rem;
+    
+    
+}
+
+.box1 input{
+    width: 90%;
+    margin-bottom: 30px;
 }

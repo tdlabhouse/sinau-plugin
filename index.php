@@ -66,9 +66,28 @@ function CF_Courses()
 
 ?>
 
-    <div class="BG-Red">
-        <h3>Harga Kelas</h3>
-        <input type="text" name="">
+    <div class="container">
+        <br>
+        <div class="box1">
+            <h3>Bahasa</h3>
+            <input type="text" name="">
+        </div>
+        <br>
+        <div class="box1">
+            <h3>Harga Kelas</h3>
+            <input type="text" name="">
+        </div>
+        <br>
+        <div class="box1">
+            <h3>Vide Trailer</h3>
+            <input type="text" name="">
+        </div>
+        <br>
+        <div class="box1">
+            <h3>Curriculum</h3>
+            <input type="text" name="">
+        </div>
+        <br>
     </div>
 
 <?php
@@ -86,3 +105,11 @@ function add_style()
 }
 
 add_action('wp_enqueue_scripts', 'add_style');
+
+
+/* Load Course Template */
+function template_course($template)
+{
+    global $post;
+    // if(;)
+}
